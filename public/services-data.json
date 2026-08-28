@@ -1,0 +1,595 @@
+{
+  "clusterMap": {
+    "services": [
+      {
+        "id": "north-hub",
+        "name": "North Hub",
+        "datacenter": "NORTH-HUB",
+        "region": "Northland",
+        "continent": "Europe",
+        "kind": "service",
+        "x": 470,
+        "y": 180,
+        "lat": 59.9,
+        "lng": 10.7,
+        "description": "Fictional Northland demo datacenter.",
+        "team": "Demo Platform",
+        "teamSlack": "#demo-platform",
+        "elkUrl": "https://logs.example.test/datacenters/north-hub",
+        "health": "healthy",
+        "version": "2026.1",
+        "lastRelease": "2026-01-15T10:00:00.000Z",
+        "dcServices": [
+          {
+            "name": "gateway-api",
+            "namespace": "demo-edge",
+            "version": "v2.4.1",
+            "replicas": 3,
+            "ingresses": [
+              "https://api.example.test"
+            ],
+            "gitRepo": "https://git.example.test/demo/gateway-api",
+            "elkUrl": "https://logs.example.test/services/gateway-api",
+            "description": "Demo public API gateway.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          },
+          {
+            "name": "accounts-api",
+            "namespace": "demo-core",
+            "version": "v1.8.0",
+            "replicas": 2,
+            "ingresses": [
+              "https://accounts.example.test"
+            ],
+            "gitRepo": "https://git.example.test/demo/accounts-api",
+            "elkUrl": "https://logs.example.test/services/accounts-api",
+            "description": "Demo account management service.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          },
+          {
+            "name": "orders-api",
+            "namespace": "demo-commerce",
+            "version": "v3.2.5",
+            "replicas": 4,
+            "ingresses": [
+              "https://orders.example.test"
+            ],
+            "gitRepo": "https://git.example.test/demo/orders-api",
+            "elkUrl": "https://logs.example.test/services/orders-api",
+            "description": "Demo order processing service.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          },
+          {
+            "name": "notifications-worker",
+            "namespace": "demo-messaging",
+            "version": "v1.3.2",
+            "replicas": 2,
+            "ingresses": [],
+            "gitRepo": "https://git.example.test/demo/notifications-worker",
+            "elkUrl": "https://logs.example.test/services/notifications-worker",
+            "description": "Demo asynchronous notification worker.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          }
+        ],
+        "serviceCount": 4,
+        "totalReplicas": 11
+      },
+      {
+        "id": "west-hub",
+        "name": "West Hub",
+        "datacenter": "WEST-HUB",
+        "region": "Westland",
+        "continent": "North America",
+        "kind": "service",
+        "x": 210,
+        "y": 260,
+        "lat": 40.7,
+        "lng": -74,
+        "description": "Fictional Westland demo datacenter.",
+        "team": "Demo Platform",
+        "teamSlack": "#demo-platform",
+        "elkUrl": "https://logs.example.test/datacenters/west-hub",
+        "health": "healthy",
+        "version": "2026.1",
+        "lastRelease": "2026-01-15T10:00:00.000Z",
+        "dcServices": [
+          {
+            "name": "gateway-api",
+            "namespace": "demo-edge",
+            "version": "v2.4.1",
+            "replicas": 3,
+            "ingresses": [
+              "https://api.example.test"
+            ],
+            "gitRepo": "https://git.example.test/demo/gateway-api",
+            "elkUrl": "https://logs.example.test/services/gateway-api",
+            "description": "Demo public API gateway.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          },
+          {
+            "name": "accounts-api",
+            "namespace": "demo-core",
+            "version": "v1.8.0",
+            "replicas": 2,
+            "ingresses": [
+              "https://accounts.example.test"
+            ],
+            "gitRepo": "https://git.example.test/demo/accounts-api",
+            "elkUrl": "https://logs.example.test/services/accounts-api",
+            "description": "Demo account management service.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          },
+          {
+            "name": "orders-api",
+            "namespace": "demo-commerce",
+            "version": "v3.2.5",
+            "replicas": 4,
+            "ingresses": [
+              "https://orders.example.test"
+            ],
+            "gitRepo": "https://git.example.test/demo/orders-api",
+            "elkUrl": "https://logs.example.test/services/orders-api",
+            "description": "Demo order processing service.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          }
+        ],
+        "serviceCount": 3,
+        "totalReplicas": 9
+      },
+      {
+        "id": "east-hub",
+        "name": "East Hub",
+        "datacenter": "EAST-HUB",
+        "region": "Eastland",
+        "continent": "Asia",
+        "kind": "service",
+        "x": 760,
+        "y": 270,
+        "lat": 35.7,
+        "lng": 139.7,
+        "description": "Fictional Eastland demo datacenter.",
+        "team": "Demo Platform",
+        "teamSlack": "#demo-platform",
+        "elkUrl": "https://logs.example.test/datacenters/east-hub",
+        "health": "healthy",
+        "version": "2026.1",
+        "lastRelease": "2026-01-15T10:00:00.000Z",
+        "dcServices": [
+          {
+            "name": "gateway-api",
+            "namespace": "demo-edge",
+            "version": "v2.4.1",
+            "replicas": 3,
+            "ingresses": [
+              "https://api.example.test"
+            ],
+            "gitRepo": "https://git.example.test/demo/gateway-api",
+            "elkUrl": "https://logs.example.test/services/gateway-api",
+            "description": "Demo public API gateway.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          },
+          {
+            "name": "orders-api",
+            "namespace": "demo-commerce",
+            "version": "v3.2.5",
+            "replicas": 4,
+            "ingresses": [
+              "https://orders.example.test"
+            ],
+            "gitRepo": "https://git.example.test/demo/orders-api",
+            "elkUrl": "https://logs.example.test/services/orders-api",
+            "description": "Demo order processing service.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          },
+          {
+            "name": "notifications-worker",
+            "namespace": "demo-messaging",
+            "version": "v1.3.2",
+            "replicas": 2,
+            "ingresses": [],
+            "gitRepo": "https://git.example.test/demo/notifications-worker",
+            "elkUrl": "https://logs.example.test/services/notifications-worker",
+            "description": "Demo asynchronous notification worker.",
+            "deployedAt": "2026-01-15T10:00:00.000Z"
+          }
+        ],
+        "serviceCount": 3,
+        "totalReplicas": 9
+      }
+    ],
+    "dependencies": [
+      {
+        "sourceId": "north-hub",
+        "targetId": "west-hub",
+        "type": "sync",
+        "label": "demo API replication"
+      },
+      {
+        "sourceId": "north-hub",
+        "targetId": "east-hub",
+        "type": "async",
+        "label": "demo event replication"
+      },
+      {
+        "sourceId": "west-hub",
+        "targetId": "east-hub",
+        "type": "sync",
+        "label": "demo failover link"
+      }
+    ],
+    "initialEdges": [
+      {
+        "id": "demo-edge-1",
+        "sourceId": "north-hub",
+        "targetId": "west-hub",
+        "type": "sync",
+        "label": "demo API replication",
+        "distance": 5900,
+        "baseLatencyMs": 78,
+        "currentLatencyMs": 82,
+        "rps": 240,
+        "errorRate": 0.002
+      },
+      {
+        "id": "demo-edge-2",
+        "sourceId": "north-hub",
+        "targetId": "east-hub",
+        "type": "async",
+        "label": "demo event replication",
+        "distance": 8300,
+        "baseLatencyMs": 122,
+        "currentLatencyMs": 128,
+        "rps": 95,
+        "errorRate": 0.004
+      },
+      {
+        "id": "demo-edge-3",
+        "sourceId": "west-hub",
+        "targetId": "east-hub",
+        "type": "sync",
+        "label": "demo failover link",
+        "distance": 10800,
+        "baseLatencyMs": 148,
+        "currentLatencyMs": 153,
+        "rps": 64,
+        "errorRate": 0.007
+      }
+    ]
+  },
+  "topology": {
+    "serviceLinks": [
+      {
+        "source": "gateway-api",
+        "target": "accounts-api",
+        "type": "sync",
+        "label": "demo account lookup"
+      },
+      {
+        "source": "gateway-api",
+        "target": "orders-api",
+        "type": "sync",
+        "label": "demo order request"
+      },
+      {
+        "source": "orders-api",
+        "target": "notifications-worker",
+        "type": "async",
+        "label": "demo order notification"
+      }
+    ],
+    "serviceInfra": {
+      "gateway-api": [
+        "redis"
+      ],
+      "accounts-api": [
+        "postgres",
+        "redis",
+        "kafka"
+      ],
+      "orders-api": [
+        "postgres",
+        "kafka"
+      ],
+      "notifications-worker": [
+        "kafka",
+        "rabbitmq"
+      ]
+    },
+    "serviceExternals": {
+      "accounts-api": [
+        "auth"
+      ],
+      "orders-api": [
+        "payment"
+      ],
+      "notifications-worker": [
+        "email"
+      ]
+    },
+    "kafkaMessageFlows": [
+      {
+        "topic": "demo.orders.created.v1",
+        "producers": [
+          "orders-api"
+        ],
+        "consumers": [
+          "notifications-worker"
+        ],
+        "message": "{\"orderId\":\"demo-order-1001\",\"total\":49.9,\"currency\":\"USD\"}"
+      },
+      {
+        "topic": "demo.accounts.updated.v1",
+        "producers": [
+          "accounts-api"
+        ],
+        "consumers": [
+          "notifications-worker"
+        ],
+        "message": "{\"accountId\":\"demo-account-42\",\"change\":\"email\"}"
+      }
+    ]
+  },
+  "catalog": {
+    "entities": [
+      {
+        "id": "gateway-api",
+        "kind": "service",
+        "name": "Gateway API",
+        "description": "Fictional public API gateway.",
+        "status": "active",
+        "team": "Demo Platform",
+        "isExternal": false,
+        "location": null,
+        "trafficLimit": null,
+        "note": null,
+        "brands": [
+          "Example"
+        ],
+        "datacenters": [
+          "north-hub",
+          "west-hub",
+          "east-hub"
+        ],
+        "ips": [
+          "192.0.2.10"
+        ],
+        "urls": [
+          {
+            "kind": "public",
+            "url": "https://api.example.test"
+          },
+          {
+            "kind": "health",
+            "url": "https://api.example.test/health"
+          }
+        ],
+        "links": [
+          {
+            "kind": "repository",
+            "url": "https://git.example.test/demo/gateway-api"
+          }
+        ]
+      },
+      {
+        "id": "accounts-api",
+        "kind": "service",
+        "name": "Accounts API",
+        "description": "Fictional account management service.",
+        "status": "active",
+        "team": "Demo Identity",
+        "isExternal": false,
+        "location": null,
+        "trafficLimit": null,
+        "note": null,
+        "brands": [
+          "Example"
+        ],
+        "datacenters": [
+          "north-hub",
+          "west-hub"
+        ],
+        "ips": [
+          "192.0.2.20"
+        ],
+        "urls": [
+          {
+            "kind": "public",
+            "url": "https://accounts.example.test"
+          }
+        ],
+        "links": [
+          {
+            "kind": "repository",
+            "url": "https://git.example.test/demo/accounts-api"
+          }
+        ]
+      },
+      {
+        "id": "orders-api",
+        "kind": "service",
+        "name": "Orders API",
+        "description": "Fictional order processing service.",
+        "status": "active",
+        "team": "Demo Commerce",
+        "isExternal": false,
+        "location": null,
+        "trafficLimit": null,
+        "note": null,
+        "brands": [
+          "Example"
+        ],
+        "datacenters": [
+          "north-hub",
+          "west-hub",
+          "east-hub"
+        ],
+        "ips": [
+          "192.0.2.30"
+        ],
+        "urls": [
+          {
+            "kind": "public",
+            "url": "https://orders.example.test"
+          }
+        ],
+        "links": [
+          {
+            "kind": "repository",
+            "url": "https://git.example.test/demo/orders-api"
+          }
+        ]
+      },
+      {
+        "id": "notifications-worker",
+        "kind": "service",
+        "name": "Notifications Worker",
+        "description": "Fictional asynchronous notification worker.",
+        "status": "active",
+        "team": "Demo Messaging",
+        "isExternal": false,
+        "location": null,
+        "trafficLimit": null,
+        "note": null,
+        "brands": [
+          "Example"
+        ],
+        "datacenters": [
+          "north-hub",
+          "east-hub"
+        ],
+        "ips": [
+          "192.0.2.40"
+        ],
+        "urls": [],
+        "links": [
+          {
+            "kind": "repository",
+            "url": "https://git.example.test/demo/notifications-worker"
+          }
+        ]
+      },
+      {
+        "id": "demo-console",
+        "kind": "desktop_product",
+        "name": "Demo Console",
+        "description": "Fictional desktop operations console.",
+        "status": "active",
+        "team": "Demo Desktop",
+        "isExternal": false,
+        "location": null,
+        "trafficLimit": null,
+        "note": null,
+        "brands": [],
+        "datacenters": [],
+        "ips": [],
+        "urls": [],
+        "links": [
+          {
+            "kind": "documentation",
+            "url": "https://docs.example.test/demo-console"
+          }
+        ]
+      },
+      {
+        "id": "mail-provider",
+        "kind": "external_vendor",
+        "name": "Example Mail Provider",
+        "description": "Fictional external email provider.",
+        "status": "active",
+        "team": "Demo Messaging",
+        "isExternal": true,
+        "location": null,
+        "trafficLimit": null,
+        "note": null,
+        "brands": [],
+        "datacenters": [],
+        "ips": [],
+        "urls": [
+          {
+            "kind": "public",
+            "url": "https://mail.example.test"
+          }
+        ],
+        "links": []
+      }
+    ],
+    "builds": [
+      {
+        "id": "demo-console-windows",
+        "productId": "demo-console",
+        "name": "Demo Console for Windows",
+        "os": "windows",
+        "brand": "Example",
+        "partner": null,
+        "status": "active",
+        "links": [
+          {
+            "kind": "documentation",
+            "url": "https://docs.example.test/demo-console/windows"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "gateway-api:0",
+        "sourceId": "gateway-api",
+        "targetId": "accounts-api",
+        "type": "http",
+        "rawName": null,
+        "host": null,
+        "endpoint": "/v1/accounts",
+        "minVersion": null,
+        "maxVersion": null,
+        "endpoints": []
+      },
+      {
+        "id": "gateway-api:1",
+        "sourceId": "gateway-api",
+        "targetId": "orders-api",
+        "type": "http",
+        "rawName": null,
+        "host": null,
+        "endpoint": "/v1/orders",
+        "minVersion": null,
+        "maxVersion": null,
+        "endpoints": []
+      },
+      {
+        "id": "orders-api:0",
+        "sourceId": "orders-api",
+        "targetId": "notifications-worker",
+        "type": "kafka",
+        "rawName": null,
+        "host": null,
+        "endpoint": null,
+        "minVersion": null,
+        "maxVersion": null,
+        "endpoints": [
+          "demo.orders.created.v1"
+        ]
+      },
+      {
+        "id": "notifications-worker:0",
+        "sourceId": "notifications-worker",
+        "targetId": "mail-provider",
+        "type": "http",
+        "rawName": null,
+        "host": null,
+        "endpoint": "/send",
+        "minVersion": null,
+        "maxVersion": null,
+        "endpoints": []
+      }
+    ],
+    "layerSummary": {
+      "services": 4,
+      "servers": 0,
+      "externalVendors": 1,
+      "products": 1,
+      "inferredExternalEndpoints": 0,
+      "builds": 1,
+      "dependencies": 4
+    }
+  }
+}
